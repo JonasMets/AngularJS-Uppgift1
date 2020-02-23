@@ -12,7 +12,7 @@ app.config(function($routeProvider) {
     })
     .when("/about", { 
         templateUrl: "views/about.html",
-        controller: "defaultController" 
+        controller: "aboutController" 
     })
     .when("/contact", { 
         templateUrl: "views/contact.html",
@@ -44,7 +44,7 @@ app.controller("defaultController", function($scope) {
     ]
 })
 
-
+// homeController
 app.controller("homeController", function($scope) {
   $scope.homeContent = { image1: "/images/ThorSki_6.png",
   promotext1:"The new ski from",
@@ -52,6 +52,15 @@ app.controller("homeController", function($scope) {
   Philosophytitle: "Our Philosophy", 
   Philosophytext: "Our skis is about that second relationship where you do everything better. Much better.  We knew there was much more that could be done to ski design. With this new ski we explore many of the ideas that never fit into a established category in the industry.  We make the great skis for freeriding. Everywhere. With the least impact on nature.  We believe in equality. We don't make skis for men. We don't make skis for women.",
   Philosophytextstrong:"We make skis for skiers." }
+  
+  
+})
+
+// aboutController
+app.controller("aboutController", function($scope) {
+  $scope.aboutContent = { image1: "/images/person-skiing-3.jpg",
+  aboutTitle:"We love skis",
+  aboutText1:"Together with a few friends we are Thor Skis. For five years we lived in Verbier, Switzerland designing all skis for Faction Skis and the legendary skier Candide Thovex. With my skis I’ve won most magazine ski tests there is.  We’re based in Torshälla, Sweden and we produce our skis in one of the best ski factories in the world. As close as it gets from all suppliers.  We only work with the best. Atomic supply us with bindings such as the Warden MNC 13, Shift MNC 13, STH2 16, and Backland Tour. On the way up we use Pomoca glueless skins.Enjoy!"}
   
   
 })

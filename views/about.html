@@ -1,3 +1,34 @@
+<style>
+  #aboutUs .aboutUs-image1{
+    width: 50%;
+    height: auto;
+  }
+
+  .aboutUs-content{
+    display: flex;
+  }
+
+  .aboutUs-text h2{
+    margin-bottom: .5rem;
+  }
+  .aboutUs-text{
+    /* justify-content: center; */
+    align-self: center;
+    padding: 2rem;
+  }
+
+</style>
+
+
+
+
 <div class="container">
-  <h1>About Our Company</h1>
+  <!-- <h1>About Our Company</h1> -->
+  <div id="aboutUs" class="aboutUs-content">
+    <img class="aboutUs-image1" src="{{aboutContent.image1}}" alt="">
+      <div class="aboutUs-text">
+        <h2> {{aboutContent.aboutTitle}} </h2>
+        <p> {{aboutContent.aboutText1}} </p>
+      </div>
+  </div>
 </div>
