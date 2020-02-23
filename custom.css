@@ -1,0 +1,319 @@
+/*  här lägger vi de färger som ska användas */
+:root{
+  --primaryColor:#505C77;
+  --primaryColorDarker:#384a74;
+  --primaryBackground:#E1E1E1;
+  --navbarText:#F9FAFC;
+  --footerText:#F9FAFC;
+  --black:#000;
+  --black-faded:#1b1b1b;
+  --darkGrey: #333;
+  --mediumGrey: #444;
+  --lightGray: #cfcfcf;
+  --white: #fff;
+  --boneWhite:#F9FAFC;
+  --boxShadowPrimaryD: #505C77;
+  --boxShadowGrey: rgba(68, 68,68, .5);
+}
+
+/*  font från https://www.dafont.com/rocket-wildness.font*/
+@font-face {
+  font-family: rocketWildness;
+  src: url('/resources/fonts/ROCKET\ WILDNESS.woff');
+}
+
+
+/* reset av margin och padding, val av box-sizing */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  /* background: var(--boneWhite); */
+  /* background: var(--white); */
+  /* color: var(--black-faded); */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*-----------  Utility classes -----------------*/
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block{
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-content-center{
+  justify-content: center;
+}
+
+/* justify-content:space-between; */
+.justifycontspacebtwn{
+  justify-content:space-between;
+}
+
+
+
+
+
+/* styling för alla media */
+
+.navbar{
+  background-color: rgb(76, 76, 107);
+    color: var(--navbarText);
+}
+.nav-item{
+  color: var(--navbarText);
+  margin: 0 0.4em;
+}
+
+.navbar-brand{
+  /* width: 20%;
+  height: 20%; */
+  width: 160px;
+  height: auto;
+}
+
+.nav-link{
+  color: var(--navbarText);
+}
+
+
+.brandname{
+  font-family: rocketWildness;
+}
+
+
+
+
+/*           mobile                 */
+@media(max-width:560px){
+
+  /* .navbar{
+    display: block;
+  } */
+
+  .navbar-brand{
+    /* width: 20%;
+    height: 20%; */
+    width: 60px;
+    height: auto;
+  }
+
+
+  #home-jumbotron{
+    /* background-image: url('/images/snowforest1.jpg'); */
+    background: url('/images/snowforest1.jpg') no-repeat center center/cover;
+    /* width: 100%; */
+    background-color: var(--primaryBackground);
+    /* height: 100px; */
+  }
+
+
+  #main-footer .content {
+    /* display: flex; */
+    background-color: rgb(76, 76, 107);
+    color: var(--footerText);
+    padding: 2em 0 1.5em 0;
+    /* display: flex; */
+
+  }
+
+  #main-footer .footerContent{
+    display: flex;
+    /* justify-content:space-between; */
+  }
+  
+  #main-footer .footerText{
+    color: var(--footerText);
+  }
+  
+  #main-footer .footerNav{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2em;
+    color: var(--footerText);
+  }
+  #main-footer .footerNavItem{
+    margin: 0.4em 0.4em;
+    color: var(--footerText);
+  }
+  
+  #main-footer .footerNavIcons{
+    display: flex;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: var(--footerText);
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+  }
+  #main-footer .footerNavIcon{
+    
+    margin: 0.4em 0.6em;
+    color: var(--footerText);
+  }
+
+  .footer-bottomtext{
+    text-align: center;
+    margin-top: 2em;
+  }
+
+}
+
+
+
+/*-----------------      stor skärm   -----------*/
+@media(min-width:560px){
+
+  /* .navbar{
+    display: flex;
+  } */
+  .navbar-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 1em;
+  }
+
+  .navbar-nav{
+    display: flex;
+  }
+
+
+  .nav-items{
+    display: flex;
+    align-items: center;
+  }
+
+#home-jumbotron{
+    /* background-image: url('/images/snowforest1.jpg'); no-repeat center center/cover */
+    position: relative;
+    background: url('/images/snowforest1.jpg') no-repeat center;
+    width: 100%;
+    background-color: var(--primaryBackground);
+    height: 400px;
+    z-index: -1;
+}
+
+#home-jumbotron .promo1{
+  display: flex;
+}
+
+#home-jumbotron .promo1-img{
+  position: relative;
+  top: 200px;
+  left: 420px;
+    width: 50px;
+    transform: rotateZ(-90deg);
+}
+
+/* promo1-text */
+#home-jumbotron .promo1-text{
+  position: relative;
+  top: 330px;
+  left: 600px;
+  font-size: 25;
+  font-weight: bold;
+}
+#home-jumbotron .brandname{
+  font-size: 28;
+  /* font-weight: bold; */
+}
+
+
+
+#homepage .thePhilosophy{
+  max-width: 830px;
+  min-width: 100px;
+  text-align: center;
+  padding: 2rem;
+}
+#homepage h4{
+  margin-bottom: 0.2rem;
+}
+
+#homepage .home-section1{
+  display: flex;
+  justify-content: center;
+}
+
+
+#homepage .home-section2{
+  /* border: 1px dotted black; */
+  /* position: relative; */
+  background: url('/images/person-skiing-3.jpg') no-repeat center;
+    /* width: 100%; */
+    background-color: var(--primaryBackground);
+    height: 400px;
+    /* overflow: hidden;
+    top: 300px;
+    left:0;*/
+    z-index: -1; 
+}
+
+
+
+
+  #main-footer .content {
+    /* display: flex; */
+    background-color: rgb(76, 76, 107);
+    color: var(--footerText);
+    padding: 2em 0;
+  }
+  
+  #main-footer .footerContent{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  #main-footer .footerText{
+    color: var(--footerText);
+  }
+  
+  #main-footer .footerNav{
+    margin-left: 2em;
+    color: var(--footerText);
+  }
+  #main-footer .footerNavItem{
+    margin: 0 0.4em;
+    color: var(--footerText);
+  }
+  
+  #main-footer .footerNavIcons{
+    margin-right: 2em;
+    color: var(--footerText);
+  }
+  #main-footer .footerNavIcon{
+    margin: 0 0.2em;
+    color: var(--footerText);
+  }
+
+  .footer-bottomtext{
+    text-align: center;
+    margin-top: 0;
+  }
+
+}

@@ -1,0 +1,16 @@
+<div>
+
+</div>
+
+
+<div class="container d-flex">
+    <div ng-repeat="item in testamonials" class="d-flex border" style="width: 30%">
+        <img ng-src="images/{{ item.image }}" alt="" style="width: auto; height: 150px;">
+        <div>
+            <h6>{{ item.title }}</h6>
+            <p>{{ item.text }}</p>
+        </div>
+    </div>
+</div>
+
+
