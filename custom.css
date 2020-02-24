@@ -54,6 +54,13 @@ a:hover{
   color: var(--lightGray);
 }
 
+
+.active{
+  color: var(--black);
+  font-weight: bold;
+}
+
+
 /*-----------  Utility classes -----------------*/
 .container {
   max-width: 1000px;

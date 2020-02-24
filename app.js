@@ -4,31 +4,38 @@ app.config(function($routeProvider) {
     $routeProvider
     .when("/home", { 
         templateUrl: "views/home.html",
-        controller: "homeController" 
+        controller: "homeController",
+        activetab: "home"
     })
     .when("/products", { 
         templateUrl: "views/products.html",
-        controller: "defaultController" 
+        controller: "defaultController",
+        activetab: "products"
     })
     .when("/about", { 
         templateUrl: "views/about.html",
-        controller: "aboutController" 
+        controller: "aboutController",
+        activetab: "about"
     })
     .when("/contact", { 
         templateUrl: "views/contact.html",
-        controller: "defaultController" 
+        controller: "defaultController",
+        activetab: "contact"
     })
     .when("/cart", { 
         templateUrl: "views/cart.html",
-        controller: "defaultController" 
+        controller: "defaultController",
+        activetab: "cart"
     })
     .when("/finddealer", { 
         templateUrl: "views/finddealer.html",
-        controller: "defaultController" 
+        controller: "defaultController",
+        activetab: "finddealer"
     })
     .when("/privacypolicy", { 
         templateUrl: "views/privacypolicy.html",
-        controller: "defaultController" 
+        controller: "defaultController",
+        activetab: "privacypolicy"
     })
     .otherwise({redirectTo: '/home'})
 })
