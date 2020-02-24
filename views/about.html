@@ -1,22 +1,52 @@
 <style>
-  #aboutUs .aboutUs-image1{
-    width: 50%;
-    height: auto;
+  #aboutUs .aboutUs-image1 {
+    /* width: 50%;
+    height: auto; */
+    display: none;
   }
 
-  .aboutUs-content{
+  .aboutUs-content {
     display: flex;
   }
 
-  .aboutUs-text h2{
+  .aboutUs-text h2 {
     margin-bottom: .5rem;
   }
-  .aboutUs-text{
+
+  .aboutUs-text {
     /* justify-content: center; */
     align-self: center;
     padding: 2rem;
+    margin-bottom: 10rem;
   }
 
+  @media(min-width:560px) {
+    #aboutUs .aboutUs-image1 {
+      display: flex;
+      border: none;
+      /* flex: 1; */
+      width: 50%;
+      /* height: auto; */
+      min-height: 700px;
+      /* overflow: hidden; */
+      
+    }
+
+    .aboutUs-content {
+      display: flex;
+    }
+
+    .aboutUs-text h2 {
+      margin-bottom: .5rem;
+    }
+
+    .aboutUs-text {
+      /* justify-content: center; */
+      align-self: center;
+      padding: 2rem;
+    }
+
+  }
 </style>
 
 
@@ -26,9 +56,9 @@
   <!-- <h1>About Our Company</h1> -->
   <div id="aboutUs" class="aboutUs-content">
     <img class="aboutUs-image1" src="{{aboutContent.image1}}" alt="">
-      <div class="aboutUs-text">
-        <h2> {{aboutContent.aboutTitle}} </h2>
-        <p> {{aboutContent.aboutText1}} </p>
-      </div>
+    <div class="aboutUs-text">
+      <h2> {{aboutContent.aboutTitle}} </h2>
+      <p> {{aboutContent.aboutText1}} </p>
+    </div>
   </div>
 </div>
