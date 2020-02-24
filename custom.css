@@ -379,3 +379,22 @@ a:hover{
   }
 
 }
+
+
+
+
+
+/* angular CSS */
+/* om man börjar skriva i input så blir fälten röda om det är fel */
+#form1 input.ng-invalid.ng-dirty {
+  background-color: rgb(235, 216, 219);
+}
+#form1 input.ng-valid.ng-touched {
+  background-color: lightgreen;
+}
+
+/* knappen är ej aktiv så länge det finns fel i formuläret*/
+#form1 input[disabled="disabled"]{
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}

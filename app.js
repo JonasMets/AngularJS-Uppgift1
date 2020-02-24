@@ -19,8 +19,12 @@ app.config(function($routeProvider) {
     })
     .when("/contact", { 
         templateUrl: "views/contact.html",
-        controller: "defaultController",
+        controller: "ContactController",
         activetab: "contact"
+    })
+    .when('/contact-success',{
+      templateUrl: 'views/contact-success.html',
+      controller:'ContactController'
     })
     .when("/cart", { 
         templateUrl: "views/cart.html",
@@ -71,6 +75,21 @@ app.controller("aboutController", function($scope) {
   
   
 })
+
+
+
+// kontroller för submit från contact.html
+app.controller('ContactController', ['$scope','$location', function ($scope,$location) {
+  
+  $scope.sendMessage = function () {
+    $scope.contact.name="";
+    $scope.contact.email="";
+    $scope.contact.message="";
+    $location.path('/contact-success');
+  }
+
+}]);
+
 
 
 // DIRECTIVES = Partial Views
