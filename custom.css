@@ -153,12 +153,35 @@ a:hover{
 
 
   #home-jumbotron{
-    /* background-image: url('/images/snowforest1.jpg'); */
+    /* position: absolute; */
     background: url('/images/snowforest1.jpg') no-repeat center center/cover;
-    /* width: 100%; */
     background-color: var(--primaryBackground);
-    /* height: 100px; */
+    height: 200px;
+    z-index: -1;
   }
+
+  #home-jumbotron .promo1-img{
+    position: absolute;
+    top: 130px;
+    left: 140px;
+      width: 50px;
+      transform: rotateZ(-90deg);
+  }
+
+
+  /* promo1-text */
+#home-jumbotron .promo1-text{
+  position: relative;
+  top: 155px;
+  left: 120px;
+  font-size: 25;
+  font-weight: bold;
+}
+#home-jumbotron .brandname{
+  font-size: 28;
+  /* font-weight: bold; */
+}
+
 
 
   #main-footer .content {
@@ -237,7 +260,8 @@ a:hover{
 
 #home-jumbotron{
     /* background-image: url('/images/snowforest1.jpg'); no-repeat center center/cover */
-    position: relative;
+    content: '';
+    /* position: relative; */
     background: url('/images/snowforest1.jpg') no-repeat center;
     width: 100%;
     background-color: var(--primaryBackground);
@@ -250,18 +274,20 @@ a:hover{
 }
 
 #home-jumbotron .promo1-img{
-  position: relative;
+  position: absolute;
   top: 200px;
-  left: 420px;
+  /* left: 420px; */
+  left: 50%;
     width: 50px;
     transform: rotateZ(-90deg);
 }
 
 /* promo1-text */
 #home-jumbotron .promo1-text{
-  position: relative;
-  top: 330px;
-  left: 600px;
+  position: absolute;
+  top: 380px;
+  /* left: 600px; */
+  left: 50%;
   font-size: 25;
   font-weight: bold;
 }
@@ -289,6 +315,7 @@ a:hover{
 
 
 #homepage .home-section2{
+  content: '';
   /* border: 1px dotted black; */
   /* position: relative; */
   background: url('/images/person-skiing-3.jpg') no-repeat center;
