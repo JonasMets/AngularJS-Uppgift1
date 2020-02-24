@@ -1,15 +1,30 @@
-<div id="contactUs" class="container content">
-  <h1>Contact Us</h1>
-  <form id="form1" name="contactForm" ng-submit="sendMessage()" novalidate>
-    <input type="text" placeholder="your name" name="name" autocomplete="false" ng-model="contact.name" ng-required="true">
-    <div ng-show="contactForm.name.$touched && contactForm.name.$invalid"> 
-      <small style="text-align: center; display:block;">Enter name</small>
-    </div>
-    <input type="email" name="email" placeholder="type email" autocomplete="false" ng-model="contact.email" ng-required="true">
-    <div ng-show="contactForm.email.$touched && contactForm.email.$invalid"> 
-      <small style="text-align: center; display:block;">Enter email</small>
-    </div>
-    <textarea name="message" placeholder="leave message ....or not" ng-model="contact.message"></textarea>
-    <input type="submit" value="SUBMIT" ng-disabled="contactForm.$invalid">
-  </form>
+<div id="contactUs">
+
+  <div>
+    <div class="contactus-image"></div>
+  
+  
+
+  <!-- </div> -->
+
+  <div class="container content ">
+    <h1>Contact Us</h1>
+    <form id="form1" name="contactForm" ng-submit="sendMessage()" novalidate>
+      <input type="text" placeholder="your name" name="name" autocomplete="false" ng-model="contact.name"
+        ng-required="true">
+      <div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
+        <small style="text-align: center; display:block;">Enter name</small>
+      </div>
+      <input type="email" name="email" placeholder="type email" autocomplete="false" ng-model="contact.email"
+        ng-required="true">
+      <div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
+        <small style="text-align: center; display:block;">Enter email</small>
+      </div>
+      <textarea name="message" placeholder="leave message ....or not" ng-model="contact.message"></textarea>
+      <input type="submit" value="SUBMIT" ng-disabled="contactForm.$invalid">
+    </form>
+  </div>
+
+</div>
+
 </div>

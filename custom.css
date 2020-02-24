@@ -383,6 +383,21 @@ a:hover{
 
 
 /* contactform */
+
+.contactus-image{
+  background: url('/images/person-skiing-3.jpg') no-repeat center;
+  /* background-position: 10% 0; */
+  background-position: center;
+  position: absolute;
+  /* top: 350px; */
+  width: 100%;
+  /* height: 100%; */
+  height: 400px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+
 .content{
   padding: 20px;
 }
