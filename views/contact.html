@@ -1,4 +1,4 @@
-<div id="contactUs" class="container">
+<div id="contactUs" class="container content">
   <h1>Contact Us</h1>
   <form id="form1" name="contactForm" ng-submit="sendMessage()" novalidate>
     <input type="text" placeholder="your name" name="name" autocomplete="false" ng-model="contact.name" ng-required="true">
@@ -9,7 +9,7 @@
     <div ng-show="contactForm.email.$touched && contactForm.email.$invalid"> 
       <small style="text-align: center; display:block;">Enter email</small>
     </div>
-    <textarea name="message" placeholder="leave message" ng-model="contact.message"></textarea>
-    <input type="submit" value="send" ng-disabled="contactForm.$invalid">
+    <textarea name="message" placeholder="leave message ....or not" ng-model="contact.message"></textarea>
+    <input type="submit" value="SUBMIT" ng-disabled="contactForm.$invalid">
   </form>
 </div>
